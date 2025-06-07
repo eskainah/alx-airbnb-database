@@ -14,6 +14,7 @@ FROM
 INNER JOIN 
     Users u ON b.user_id = u.user_id;
 
+
 SELECT 
     p.property_id,
     p.name AS property_name,
@@ -27,6 +28,7 @@ FROM
 LEFT JOIN 
     Reviews r ON p.property_id = r.property_id;
 
+
 SELECT 
     u.user_id,
     u.first_name,
@@ -34,7 +36,7 @@ SELECT
     u.email,
     b.booking_id,
     b.property_id,
-    b.start_date,
+    b.start_datjoins_queries.sqle,
     b.end_date,
     b.total_price,
     b.status
